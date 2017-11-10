@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  # get 'customers/index'
+  get 'customers/missing_email', to: 'customers#missing_email', as: 'no_email'
+
+  get 'customers/alphabetized', to: 'customers#alphabetized', as: 'alphabetical'
 
   root 'customers#index'
 
