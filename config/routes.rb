@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root 'customer#index'
+  # get 'customers/index'
+
+  root 'customers#index'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
